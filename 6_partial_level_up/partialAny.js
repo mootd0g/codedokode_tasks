@@ -12,6 +12,8 @@ function partialAny(func) {
 	}
 }
 
+
+
 function test(a, b, c) { 
 	return 'a=' + a + ',b=' + b + ',c=' + c; 
 }

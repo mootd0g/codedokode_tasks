@@ -9,6 +9,7 @@ function partial(func) {
 	}
 }
 
+
 function add(a, b) { 
 	return a + b; 
 }
@@ -27,3 +28,9 @@ var mult23 = partial(mult, 2, 3); // мы зафиксировали первы�
 
 console.log(mult23(4, 5)); // 2*3*4*5 = 120
 console.log(mult23(1, 1)); // 2*3*1*1 = 6
+
+console.log( "----------------------" );
+
+var add10 = add.bind(null, 10); // bind для фиксации аргумента
+
+console.log(add10(5));
